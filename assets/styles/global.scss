@@ -1,0 +1,45 @@
+.btn-main {
+    padding: 13px 35px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(178.96deg, #FF8267 0.88%, #F83669 99.11%);
+    border-radius: 13px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-second {
+    padding: 13px 35px;
+    font-size: 16px;
+    border: 1px solid #F83669;
+    color: #F83669;
+    text-align: center;
+    border-radius: 13px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// .btn-second {
+//     width: 135px;
+//     height: 50px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 16px;
+//     background: linear-gradient(178.96deg, #FF8267 0.88%, #F83669 99.11%);
+//     border-radius: 13px;
+// }
+
+// .btn-second-inner {
+//     padding: 11px 32.5px;
+//     font-size: 16px;
+//     background: white;
+//     border-radius: 13px;
+// }
