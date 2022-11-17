@@ -80,11 +80,11 @@ body {
   margin: 0px;
   padding: 0px;
   // font-family: 'Noto Sans TC', 'Noto Sans SC' ,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
-  color: #AC9EA1;
+  color: white;
   font-family: 'SF';
-  background: #FBFBFB;
+  // background-color: #000019;
   // font-family: 'SF Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang TC,Hiragino Sans GB,Microsoft JhengHei,sans-serif!important';
 }
 ol, ul {
