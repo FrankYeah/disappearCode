@@ -51,6 +51,7 @@ export default {
     '~plugins/element-ui',
     '~/plugins/echarts',
     '~/plugins/axios',
+    { src: '~/plugins/fb-sdk', ssr: false },
     '~/plugins/moments',
     { src: '~/plugins/gtag'},
     { src: '~plugins/vue-quill-editor.js', ssr: false },

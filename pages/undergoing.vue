@@ -22,14 +22,15 @@
     </div>
 
     <div>
-      
-    
+      <div class="fb-comments" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-numposts="1"></div>
+    <div class="fb-comments" data-href="https://siddharam.com/" data-width="" data-numposts="1"></div>
     </div>
   </div>
 </template>
 
 <script>
 
+import Vue from 'vue'
 
 export default {
   layout: 'default',
@@ -41,21 +42,20 @@ export default {
   },
   data () {
     return {
-      
+      isFBReady: false
     }
   },
-  async mounted () {
-
+  mounted () {
+    // this.isFBReady = Vue.FB != undefined
+    // window.addEventListener('fb-sdk-ready', this.onFBReady)
   },
-  destroyed () {
-    
-  },
-  computed: {
-    
+  beforeDestroy: function () {
+    // window.removeEventListener('fb-sdk-ready', this.onFBReady)
   },
   methods: {
-    
-    
+    onFBReady: function () {
+      // this.isFBReady = true
+    }
   },
   watch: {
     
