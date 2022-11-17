@@ -1,7 +1,30 @@
 <template>
-  <div class="index">
-adfadfs
+  <div class="under"
+    :style="{
+      'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
+    }"
+  >
+  <div class="under-box">
+  誠徵老照片與老故事！<br><br>
 
+  大家小時候有去過十八羅漢洞嗎🤔<br><br>
+
+  基隆人小時候必去探險或是校外教學的地方！聽說裡面有很多神秘雕像跟民間傳說故事～好好奇哦！<br><br>
+
+  網路上的資料很有限，除了之前很多網友分享的文章以外，不曉得大家有沒有自己曾經去過的老照片、或是有趣的故事可以分享呢？<br><br>
+
+  雞籠怪奇團隊現在正在挖掘十八羅漢洞的故事～想跟大家徵求十八羅漢洞的經驗跟老照片，有機會讓你的故事跟照片出現在我們的網站上唷！<br><br>
+
+  如果你願意提供，請直接與我們聯絡～～<br><br>
+
+  粉專私訊：<br>
+  了解更多：
+    </div>
+
+    <div>
+      
+    
+    </div>
   </div>
 </template>
 
@@ -40,11 +63,26 @@ export default {
 }
 </script>
 
+
 <style lang="scss" scoped>
 
-.index {
- 
+.under {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: white;
 
+  &-box {
+    width: 80%;
+    font-size: 24px;
+  }
 }
 
 </style>
