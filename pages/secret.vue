@@ -4,7 +4,8 @@
       'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
     }"
   >
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfd6NNOtLe5hhKNlVD7gt6QxASHqKbKOyBsVdnpargTeTuk9A/viewform?embedded=true" width="640" height="937" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+    <iframe width="100%" height="600px" src="https://www.surveycake.com/s/Y6347"
+    style="border:#ddd 1px solid;" allowTransparency="true" frameborder="0"></iframe>
   </div>
 </template>
 

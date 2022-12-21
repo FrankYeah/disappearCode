@@ -5,6 +5,8 @@
     }"
   >
   <div class="under-box">
+  
+  
   誠徵老照片與老故事！<br><br>
 
   大家小時候有去過十八羅漢洞嗎🤔<br><br>
@@ -22,8 +24,18 @@
     </div>
 
     <div>
-      <div class="fb-comments" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-numposts="1"></div>
-    <div class="fb-comments" data-href="https://siddharam.com/" data-width="" data-numposts="1"></div>
+      <!-- <div class="fb-comments" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-numposts="1"></div> -->
+    <div class="fb-comments" data-href="https://siddharam.com/" data-width="300" data-colorscheme="light" data-numposts="5"></div>
+
+<!-- <div class="fb-post" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-show-text="true"><blockquote cite="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617" class="fb-xfbml-parse-ignore"><p>這間就是臭粿仔湯，大家應該快流口水了嗎？ 地址：206基隆市七堵區自治街12號</p>由<a href="https://facebook.com/keelungdumbdiary">基隆傻瓜日記</a>發佈於&nbsp;<a href="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617">2017年8月27日 星期日</a></blockquote></div> -->
+<div>aaaaaaaa</div>
+<br><div>aaaaaaaa</div>
+<br><div>aaaaaaaa</div>
+<br><div>aaaaaaaa</div>
+<br>
+
+<div class="fb-comments" data-href="https://siddharam.com/1234" data-width="300" data-colorscheme="light" data-numposts="5"></div>
+
     </div>
   </div>
 </template>
@@ -42,10 +54,28 @@ export default {
   },
   data () {
     return {
-      isFBReady: false
+      isFBReady: false,
+      isFromIndexPage: false
     }
   },
+    beforeRouteEnter(to, from, next) {
+      next(vm => {
+      // 判斷是否從首頁過來
+      if(from.name) {
+      console.log(from.name.substr(0, 5))
+        if(from.name.substr(0, 8) == 'index') {
+          console.log(from.name.substr(0, 8))
+          console.log(from.name)
+          vm.isFromIndexPage = true
+        }
+      }
+      vm.prevRoute = from
+    })
+  },
   mounted () {
+    if(this.isFromIndexPage) {
+      location.reload()
+    }
     // this.isFBReady = Vue.FB != undefined
     // window.addEventListener('fb-sdk-ready', this.onFBReady)
   },

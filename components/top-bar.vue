@@ -3,7 +3,7 @@
     <div class="top-box">
       <div class="top-left"></div>
       <div class="top-right">
-        <nuxt-link to="/" class="top-text">事務所入口</nuxt-link>
+        <nuxt-link to="/entry" class="top-text">事務所入口</nuxt-link>
         <nuxt-link to="/about" class="top-text">關於我們</nuxt-link>
       </div>
     </div>

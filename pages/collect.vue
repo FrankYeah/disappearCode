@@ -6,7 +6,9 @@
   >
   <div class="collect-box">
     <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">
-    <div></div>
+    <div>
+      <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/" data-width="400" data-numposts="1"></div>
+    </div>
   </div>
   <div class="collect-box">
     <img class="collect-img" src="@/assets/img/collect/anlei.png" alt="btn">
@@ -48,11 +50,27 @@ export default {
   },
   data () {
     return {
-      
+      isFromIndexPage: false
     }
   },
+  beforeRouteEnter(to, from, next) {
+      next(vm => {
+      // 判斷是否從首頁過來
+      if(from.name) {
+      console.log(from.name.substr(0, 5))
+        if(from.name.substr(0, 8) == 'index') {
+          console.log(from.name.substr(0, 8))
+          console.log(from.name)
+          vm.isFromIndexPage = true
+        }
+      }
+      vm.prevRoute = from
+    })
+  },
   async mounted () {
-
+    if(this.isFromIndexPage) {
+      location.reload()
+    }
   },
   destroyed () {
     
