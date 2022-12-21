@@ -279,7 +279,7 @@ export default {
     width: 200px;
     height: 100px;
     margin-top: 45%;
-    opacity: 0.8;
+    opacity: 0.6;
 
     &:hover {
       opacity: 1;
@@ -325,7 +325,7 @@ export default {
     &-btn {
       width: 130px;
       height: 88px;
-      opacity: 0.8;
+      opacity: 0.6;
 
       &:hover {
         opacity: 1;

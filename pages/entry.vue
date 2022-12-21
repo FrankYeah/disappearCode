@@ -118,7 +118,7 @@ export default {
  }
 
  &-btn {
-  opacity: 0.8;
+  opacity: 0.6;
 
   &:hover {
     opacity: 1;
