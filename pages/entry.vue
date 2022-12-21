@@ -118,6 +118,7 @@ export default {
  }
 
  &-btn {
+  cursor: pointer;
   opacity: 0.6;
 
   &:hover {

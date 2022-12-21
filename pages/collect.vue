@@ -110,7 +110,7 @@ export default {
   &-map {
     position: relative;
     width: 800px;
-    height: 600px;
+    height: 580px;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,6 +125,7 @@ export default {
   &-img {
     width: 120px;
     height: 60px;
+    cursor: pointer;
     opacity: 0.6;
 
     &:hover {

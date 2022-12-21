@@ -107,7 +107,7 @@ export default {
   }
 
   &-img {
-    
+    cursor: pointer;
     opacity: 0.6;
 
     &:hover {
@@ -119,6 +119,7 @@ export default {
     width: 180px;
     height: 90px;
     margin-top: 300px;
+    cursor: pointer;
     opacity: 0.6;
 
     &:hover {

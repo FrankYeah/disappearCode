@@ -13,7 +13,7 @@
       也沒有吧！<br>
       就只是一群人，<br>
       用戲劇、用文字、用遊戲、用藝術，<br>
-      貫徹著想為雞籠做些什麼的心情。<br>
+      貫徹著想為基隆做些什麼的心情。<br>
       這樣的一個團隊，<br>
       說來，還真是怪奇啊。
     </div>
@@ -161,10 +161,10 @@ export default {
 
 .about {
   width: 100vw;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
-  padding-top: 120px;
+  padding-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -176,7 +176,8 @@ export default {
     font-size: 24px;
 
     &-text {
-      width: 370px;
+      margin-top: 60px;
+      width: 400px;
     }
 
     &-intro {
@@ -191,16 +192,28 @@ export default {
       &-left {
         width: 108px;
         height: 135px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+        }
       }
 
       &-right {
         width: 108px;
         height: 135px;
+        cursor: pointer;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+        }
       }
 
       &-img {
-        width: 300px;
-        height: 400px;
+        width: 250px;
+        height: 360px;
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: center;

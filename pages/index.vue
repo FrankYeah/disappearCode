@@ -266,19 +266,22 @@ export default {
   }
 
   &-head {
-    font-size: 24px;
+    margin: 20px 0px 50px 0px;
+    font-size: 30px;
   }
 
   &-text {
     margin-top: 20px;
     white-space: pre-line;
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: 1.3px;
   }
 
   &-btn {
     width: 200px;
     height: 100px;
-    margin-top: 45%;
+    margin-top: 35%;
+    cursor: pointer;
     opacity: 0.6;
 
     &:hover {
@@ -299,8 +302,7 @@ export default {
 
     &-box {
       width: 500px;
-      height:700px;
-      padding: 40px;
+      padding: 40px 40px 60px;
       background-color: rgba(0, 0, 0, 0.7);
     }
 
@@ -325,6 +327,7 @@ export default {
     &-btn {
       width: 130px;
       height: 88px;
+      cursor: pointer;
       opacity: 0.6;
 
       &:hover {
