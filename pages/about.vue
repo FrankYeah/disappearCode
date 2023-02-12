@@ -6,16 +6,26 @@
   >
   <div class="about-box">
     <div class="about-box-text">
-      怪奇團隊 – 關於我們<br><br>
-      一盒桌遊、一次聚餐、一條皮帶，<br>
-      一場還未止息的旅途。<br>
-      在追尋著什麼呢？<br>
-      也沒有吧！<br>
-      就只是一群人，<br>
-      用戲劇、用文字、用遊戲、用藝術，<br>
-      貫徹著想為基隆做些什麼的心情。<br>
-      這樣的一個團隊，<br>
-      說來，還真是怪奇啊。
+      <div class="about-box-head">消失事務所</div>
+      歡迎來到消失事務所，我們由不同的專業團隊組成，同時負責處理雞籠的各種怪奇事務。不論是過去的一段記憶、體驗，或是物品，都可以來信告知您的需<br>求，我們會在評估後，結合團隊及大眾的力量，協助您找回消失的事物。<br><br>
+      
+      <div class="about-box-head">怪奇團隊</div>
+      由雞籠在地團隊組成，包含:文安社區 X 慾望劇團 X 阿普蛙工作室 X 無用學堂 X 西打藍 X 小哈。以一場飯局為契機，加上一點想在雞籠做些什麼的動力，最終 形成了現在有著多元組成的怪奇團隊。<br><br>
+      
+      <div class="about-box-head">過去案例</div>
+      <a href='https://frankyeah.github.io/klkuaiki/index.html' target="_blank" class="about-box-link-box">
+        2020:怪奇事件簿、咱的聲音
+        <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
+      </a>
+      <a href='https://frankyeah.github.io/klkuaikii/' target="_blank" class="about-box-link-box">
+        2021:怪奇逃走中-混血探員
+        <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
+      </a>
+      
+      <a href='https://www.facebook.com/klkuaiki' target="_blank" class="about-box-link-box">
+        粉專連結
+        <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
+      </a>
     </div>
     <div v-if="isShow" class="about-box-intro">
       <div class="about-box-intro-row">
@@ -161,7 +171,8 @@ export default {
 
 .about {
   width: 100vw;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   padding-top: 100px;
@@ -175,9 +186,25 @@ export default {
     display: flex;
     font-size: 24px;
 
+    &-head {
+      font-size: 30px;
+      margin-bottom: 10px;
+      width: 400px;
+    }
+
     &-text {
       margin-top: 60px;
       width: 400px;
+    }
+
+    &-link-box {
+      margin-top: 20px;
+      display: flex;
+      opacity: 0.7;
+    }
+
+    &-link {
+      margin-left: 8px;
     }
 
     &-intro {
