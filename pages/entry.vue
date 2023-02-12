@@ -136,7 +136,47 @@ export default {
 
 @media( max-width: 1023px ){
 
+.index {
+ 
+ &-outer {
 
+ }
+
+ &-bg1 {
+
+ }
+
+ &-bg2 {
+
+ }
+
+ &-float-text {
+
+ }
+
+ &-box {
+
+ }
+
+ &-lightbox {
+  width: 300px;
+ }
+
+ &-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ &-btn {
+   
+ }
+
+ &-secret {
+   
+ }
+
+}
 
 }
 

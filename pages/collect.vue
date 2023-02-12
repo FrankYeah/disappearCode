@@ -96,7 +96,7 @@ export default {
 
 .collect {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,6 +110,7 @@ export default {
     position: relative;
     width: 800px;
     height: 580px;
+    margin: 81px 0px 20px;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
