@@ -20,7 +20,7 @@
       <a href='https://frankyeah.github.io/klkuaikii/' target="_blank" class="about-box-link-box">
         2021:怪奇逃走中-混血探員
         <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
-      </a>
+      </a><br>
       
       <a href='https://www.facebook.com/klkuaiki' target="_blank" class="about-box-link-box">
         粉專連結
@@ -51,7 +51,7 @@
 
       <div class="about-box-intro-name">{{ total[currentNum].name }}</div>
       <div class="about-box-intro-text">{{ total[currentNum].text }}</div>
-      <a :href='total[currentNum].link' target="_blank" class="about-box-intro-link-box">
+      <a v-if="total[currentNum].link" :href='total[currentNum].link' target="_blank" class="about-box-intro-link-box">
         <img class="about-box-intro-link" src="@/assets/img/social/link.png" alt="fb">
       </a>
     </div>
@@ -109,7 +109,7 @@ export default {
           img: require('@/assets/img/group/chihon.png'),
           name: '大可思創/奇鴻',
           text: 'chideart (chi+idea+art)',
-          link: ''
+          link: 'https://www.facebook.com/profile.php?id=100064638415232'
         },
         {
           img: require('@/assets/img/group/pinwen.png'),
@@ -269,6 +269,76 @@ export default {
 
     }
   }
+}
+
+@media( max-width: 1023px ){
+
+.about {
+
+  &-box {
+    flex-direction: column;
+    font-size: 20px;
+
+    &-head {
+      width: 100%;
+    }
+
+    &-text {
+      margin: 10px 15px;
+      width: calc(100% - 30px);
+    }
+
+    &-link-box {
+      
+    }
+
+    &-link {
+      
+    }
+
+    &-intro {
+      margin-top: 30px;
+
+      &-row {
+        width: 100%;
+        margin: auto;
+      }
+
+      &-left {
+        width: 70px;
+        height: 90px;
+      }
+
+      &-right {
+        width: 70px;
+        height: 90px;
+      }
+
+      &-img {
+        width: 180px;
+        height: 270px;
+      }
+
+      &-name {
+        
+      }
+
+      &-text {
+        
+      }
+
+      &-link-box {
+        
+      }
+
+      &-link {
+        
+      }
+
+    }
+  }
+}
+
 }
 
 </style>
