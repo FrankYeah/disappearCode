@@ -83,7 +83,7 @@ export default {
 
 .map {
   width: 100vw;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -129,6 +129,7 @@ export default {
 
   &-right {
     width: 500px;
+    min-height: 500px;
     background-color: aquamarine;
   }
 
@@ -139,7 +140,38 @@ export default {
 
 @media( max-width: 1023px ){
 
+.map {
 
+  &-box {
+    width: 95%;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+
+  &-left {
+    flex-direction: row;
+  }
+
+  &-img {
+    width: 150px;
+  }
+
+  &-back {
+    width: 150px;
+    height: 75px;
+    margin-top: 0px;
+  }
+
+  &-right {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &-fb {
+    
+  }
+}
 
 }
 

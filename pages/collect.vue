@@ -4,9 +4,10 @@
       'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
     }"
   >
+  <img class="collect-rwd-img" src="@/assets/img/base/keelung-map.png" alt="map">
   <div class="collect-map"
     :style="{
-      'backgroundImage' : 'url(' + require('@/assets/img/base/keelung-map.png') + ')'
+      
     }"
   >
     <nuxt-link to="/map-anlei" class="collect-box collect-box-1">
@@ -106,6 +107,10 @@ export default {
   background-position-x: center;
   color: white;
 
+  &-rwd-img {
+    display: none;
+  }
+
   &-map {
     position: relative;
     width: 800px;
@@ -116,6 +121,7 @@ export default {
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    background-image: url('../assets/img/base/keelung-map.png');
   }
 
   &-box {
@@ -175,7 +181,67 @@ export default {
 
 @media( max-width: 1023px ){
 
+.collect {
+  
+  &-rwd-img {
+    display: block;
+    max-width: 500px;
+    width: calc(100% - 40px);
+    margin: 80px 20px 0px;
+  }
 
+  &-map {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: none;
+  }
+
+  &-box {
+    position: initial;
+  }
+
+  &-img {
+    width: 120px;
+    height: 60px;
+    
+  }
+
+  &-box-1 {
+    
+  }
+
+  &-box-2 {
+    
+  }
+
+  &-box-3 {
+    
+  }
+
+  &-box-4 {
+    
+  }
+
+  &-box-5 {
+    
+  }
+
+  &-box-6 {
+    
+  }
+
+  &-box-7 {
+    
+  }
+
+  &-box-8 {
+
+  }
+}
 
 }
 

@@ -248,7 +248,7 @@ export default {
 
 .index {
   width: 100vw;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
   padding-top: 120px;
@@ -337,6 +337,62 @@ export default {
     }
     
   }
+}
+
+@media( max-width: 1023px ){
+
+.index {
+  padding: 80px 0px 40px;
+
+  &-box {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+  }
+
+  &-head {
+    margin: 20px 0px 30px 0px;
+  }
+
+  &-text {
+    margin-top: 0px;
+  }
+
+  &-btn {
+    margin-top: 20px;
+  }
+
+  &-popup {
+
+    &-box {
+      width: 90%;
+      padding: 60px 20px 0px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &-text {
+      
+    }
+
+    &-input {
+      
+    }
+
+    &-textarea {
+      
+    }
+
+    &-btn-box {
+      
+    }
+
+    &-btn {
+    }
+    
+  }
+}
+
 }
 
 </style>
