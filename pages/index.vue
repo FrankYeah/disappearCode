@@ -347,18 +347,23 @@ export default {
   &-box {
     flex-direction: column;
     width: 90%;
+    min-height: calc(100vh - 90px);
     height: 100%;
   }
 
   &-head {
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
   }
 
   &-text {
     margin-top: 0px;
+    font-size: 14px;
   }
 
   &-btn {
+    width: 100px;
+    height: 50px;
     margin-top: 20px;
   }
 

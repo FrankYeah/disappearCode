@@ -20,7 +20,7 @@
       <a href='https://frankyeah.github.io/klkuaikii/' target="_blank" class="about-box-link-box">
         2021:怪奇逃走中-混血探員
         <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
-      </a><br>
+      </a>
       
       <a href='https://www.facebook.com/klkuaiki' target="_blank" class="about-box-link-box">
         粉專連結
@@ -253,6 +253,7 @@ export default {
 
       &-text {
         margin-top: 20px;
+        padding: 0px 20px;
         text-align: center;
         line-height: 1.5;
       }
@@ -281,11 +282,13 @@ export default {
 
     &-head {
       width: 100%;
+      font-size: 16px;
     }
 
     &-text {
       margin: 10px 15px;
       width: calc(100% - 30px);
+      font-size: 14px;
     }
 
     &-link-box {
@@ -297,7 +300,7 @@ export default {
     }
 
     &-intro {
-      margin-top: 30px;
+      margin-top: 10px;
 
       &-row {
         width: 100%;
@@ -315,8 +318,8 @@ export default {
       }
 
       &-img {
-        width: 180px;
-        height: 270px;
+        width: 100px;
+        height: 200px;
       }
 
       &-name {
@@ -324,7 +327,8 @@ export default {
       }
 
       &-text {
-        
+        padding: 0px 20px;
+        font-size: 14px;
       }
 
       &-link-box {

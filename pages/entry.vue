@@ -155,11 +155,11 @@ export default {
  }
 
  &-box {
-
+   top: 100px;
  }
 
  &-lightbox {
-  width: 300px;
+  width: 200px;
  }
 
  &-row {
@@ -169,7 +169,7 @@ export default {
  }
 
  &-btn {
-   
+   width: 100px;
  }
 
  &-secret {

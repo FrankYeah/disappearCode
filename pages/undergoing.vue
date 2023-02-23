@@ -4,7 +4,12 @@
       'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
     }"
   >
-    <div class="under-title">十八羅漢洞搜尋：</div>
+    <div class="under-title">
+      十八羅漢洞：老照片募集中
+      <a href="https://forms.gle/aNXgxpgJnC616pu86" target="_blank">
+        <img class="under-img" src="@/assets/img/social/link.png" alt="fb">
+      </a>
+    </div>
     <div class="under-inner"
     >
       
@@ -109,7 +114,7 @@ export default {
       // 判斷是否從首頁過來
       if(from.name) {
       console.log(from.name.substr(0, 5))
-        if(from.name.substr(0, 8) == 'index') {
+        if(from.name.substr(0, 8) == 'entry') {
           console.log(from.name.substr(0, 8))
           console.log(from.name)
           vm.isFromIndexPage = true
@@ -144,10 +149,9 @@ export default {
 
 .under {
   width: 100vw;
-  height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
-  padding: 120px 0px 400px;
+  padding: 120px 0px 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -158,6 +162,11 @@ export default {
     padding: 0px 0px 40px;
     font-size: 24px;
     text-align: center;
+  }
+
+  &-img {
+    width: 20px;
+    margin-left: 10px;
   }
 
   &-inner {
@@ -219,7 +228,55 @@ export default {
 
 @media( max-width: 1023px ){
 
+.under {
+  padding: 120px 0px 40px;
 
+  &-title {
+    padding: 0px 0px 40px;
+    font-size: 20px;
+  }
+
+  &-inner {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  &-box {
+    margin: 0px 10px 10px 0px;
+    padding: 3px;
+  }
+
+  &-box-select {
+    
+  }
+
+  &-date {
+    font-size: 12px;
+  }
+
+  &-head {
+    font-size: 12px;
+  }
+
+  &-text {
+    min-height: 150px;
+    padding: 20px 20px 0px;
+    font-size: 14px;
+  }
+
+  &-fb {
+    
+  }
+
+  &-fb-head {
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+
+  &- {
+    
+  }
+}
 
 }
 
