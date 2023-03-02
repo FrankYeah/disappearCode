@@ -27,7 +27,7 @@
     <div class="under-fb">
       <div class="under-fb-head">開放留言協尋資料：</div>
       <!-- <div class="fb-comments" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-numposts="1"></div> -->
-      <div class="fb-comments" data-href="https://siddharam.com/" data-width="300" data-colorscheme="light" data-numposts="5"></div>
+      <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/undergoing?id=0" data-width="300" data-colorscheme="light" data-numposts="5"></div>
       <!-- <div class="fb-post" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-show-text="true"><blockquote cite="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617" class="fb-xfbml-parse-ignore"><p>這間就是臭粿仔湯，大家應該快流口水了嗎？ 地址：206基隆市七堵區自治街12號</p>由<a href="https://facebook.com/keelungdumbdiary">基隆傻瓜日記</a>發佈於&nbsp;<a href="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617">2017年8月27日 星期日</a></blockquote></div> -->
       <!-- <div class="fb-comments" data-href="https://siddharam.com/1234" data-width="300" data-colorscheme="light" data-numposts="5"></div> -->
     </div>
@@ -99,11 +99,21 @@ export default {
         {
           date: '2023年2月',
           head: '公開募集老照片',
-          text: '將陸續公開'
+          text: `
+          大家小時候有去過十八羅漢洞嗎🤔<br><br>
+
+          基隆人小時候必去探險或是校外教學的地方！聽說裡面有很多神秘雕像跟民間傳說故事～好好奇哦！<br><br>
+
+          網路上的資料很有限，除了之前很多網友分享的文章以外，不曉得大家有沒有自己曾經去過的老照片、或是有趣的故事可以分享呢？<br><br>
+
+          雞籠怪奇團隊現在正在挖掘十八羅漢洞的故事～強力徵求十八羅漢洞的經驗跟老照片，有機會讓你的故事跟照片出現在我們的網站上唷！<br><br>
+
+          請點選頁面上方，投遞老照片：）<br><br>
+          `
         },
         {
-          date: '2023年4月',
-          head: '十八羅漢洞展 Coming Soon',
+          date: '2023年？月',
+          head: '特展 Coming Soon',
           text: '將陸續公開'
         }
       ]
@@ -151,7 +161,8 @@ export default {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 120px 0px 20px;
+  align-items: center;
+  padding: 120px 0px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -178,7 +189,7 @@ export default {
   }
 
   &-box {
-    margin: 0px 20px 20px 0px;
+    margin: 0px 10px 20px;
     padding: 20px;
     border: 1px solid rgba(white, 0.8);
     cursor: pointer;
@@ -210,10 +221,13 @@ export default {
   }
 
   &-fb {
+    width: 100%;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: grey;
   }
 
   &-fb-head {
@@ -229,7 +243,7 @@ export default {
 @media( max-width: 1023px ){
 
 .under {
-  padding: 120px 0px 40px;
+  padding: 120px 0px 0px;
 
   &-title {
     padding: 0px 0px 40px;
@@ -242,8 +256,8 @@ export default {
   }
 
   &-box {
-    margin: 0px 10px 10px 0px;
-    padding: 3px;
+    margin: 0px 5px 10px;
+    padding: 5px;
   }
 
   &-box-select {
@@ -251,17 +265,17 @@ export default {
   }
 
   &-date {
-    font-size: 12px;
+    
   }
 
   &-head {
-    font-size: 12px;
+    
   }
 
   &-text {
     min-height: 150px;
     padding: 20px 20px 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &-fb {

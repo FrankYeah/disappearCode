@@ -10,13 +10,13 @@
       <div class="index-box">
         <img class="index-lightbox" src="@/assets/img/index/brand.gif" alt="btn">
         <div class="index-row">
-          <nuxt-link to="/undergoing" class="index-">
+          <nuxt-link to="/undergoing" class="index-href">
             <img class="index-btn" src="@/assets/img/index/undergoing.png" alt="btn">
           </nuxt-link>
-          <nuxt-link to="/collect" class="index-">
+          <nuxt-link to="/collect" class="index-href">
             <img class="index-btn" src="@/assets/img/index/total-case.png" alt="btn">
           </nuxt-link>
-          <nuxt-link to="/secret" class="index-">
+          <nuxt-link to="/secret" class="index-href">
             <img class="index-btn" src="@/assets/img/index/project-case.png" alt="btn">
           </nuxt-link>
         </div>
@@ -116,9 +116,17 @@ export default {
    
  }
 
+ &-href {
+   opacity: 1;
+
+   &:hover {
+     opacity: 1;
+   }
+ }
+
  &-btn {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 
   &:hover {
     opacity: 1;
@@ -134,7 +142,7 @@ export default {
 
 }
 
-@media( max-width: 1023px ){
+@media( max-width: 500px ){
 
 .index {
  
@@ -143,7 +151,7 @@ export default {
  }
 
  &-bg1 {
-
+   background-position-x: left;
  }
 
  &-bg2 {
@@ -155,21 +163,21 @@ export default {
  }
 
  &-box {
-   top: 100px;
+  top: 200px;
  }
 
  &-lightbox {
-  width: 200px;
+  width: 88%;
+  margin-bottom: 30px;
  }
 
  &-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
  }
 
  &-btn {
-   width: 100px;
+   width: 150px;
  }
 
  &-secret {

@@ -4,41 +4,45 @@
       'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
     }"
   >
-  <img class="collect-rwd-img" src="@/assets/img/base/keelung-map.png" alt="map">
-  <div class="collect-map"
-    :style="{
-      
-    }"
-  >
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-1">
-      <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-2">
-      <img class="collect-img" src="@/assets/img/collect/anlei.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-3">
-      <img class="collect-img" src="@/assets/img/collect/sinyi.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-4">
-      <img class="collect-img" src="@/assets/img/collect/chunchen.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-5">
-      <img class="collect-img" src="@/assets/img/collect/chunshan.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-6">
-      <img class="collect-img" src="@/assets/img/collect/qidu.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-7">
-      <img class="collect-img" src="@/assets/img/collect/nunnun.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-7">
-      <img class="collect-img" src="@/assets/img/collect/nunnun.png" alt="btn">
-    </nuxt-link>
-    <nuxt-link to="/map-anlei" class="collect-box collect-box-8">
-      <img class="collect-img" src="@/assets/img/collect/none.png" alt="btn">
-    </nuxt-link>
+    <img class="collect-rwd-img" src="@/assets/img/base/keelung-map.png" alt="map">
+    <div class="collect-map"
+      :style="{
+        
+      }"
+    >
+      <div class="collect-box collect-box-1">
+        <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-2">
+        <img class="collect-img collect-img-special" src="@/assets/img/collect/anlei.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-3">
+        <img class="collect-img" src="@/assets/img/collect/sinyi.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-4">
+        <img class="collect-img" src="@/assets/img/collect/chunchen.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-5">
+        <img class="collect-img" src="@/assets/img/collect/chunshan.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-6">
+        <img class="collect-img collect-img-special" src="@/assets/img/collect/qidu.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-7">
+        <img class="collect-img" src="@/assets/img/collect/nunnun.png" alt="btn">
+      </div>
+      <div class="collect-box collect-box-8">
+        <img class="collect-img" src="@/assets/img/collect/none.png" alt="btn">
+      </div>
 
-  </div>
+    </div>
+    <div class="collect-text">
+      <nuxt-link class="collect-text-link" to="/secret">
+        <div class="collect-text-text">消失事務所 - 投件單</div>
+        <img class="collect-text-img" src="@/assets/img/social/link.png" alt="fb">
+      </nuxt-link>
+    </div>
+
   </div>
 </template>
 
@@ -131,12 +135,6 @@ export default {
   &-img {
     width: 120px;
     height: 60px;
-    cursor: pointer;
-    opacity: 0.6;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   &-box-1 {
@@ -177,6 +175,25 @@ export default {
   &-box-8 {
     bottom: 50px;
   }
+
+  &-text {
+    margin-top: 4px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+    }
+
+    &-text {
+      
+    }
+
+    &-img {
+      width: 14px;
+      height: 14px;
+      margin-left: 6px;
+    }
+  }
 }
 
 @media( max-width: 1023px ){
@@ -191,7 +208,7 @@ export default {
   }
 
   &-map {
-    width: 100%;
+    width: 320px;
     height: 100%;
     margin: 20px 0px 0px;
     display: flex;
@@ -205,9 +222,14 @@ export default {
   }
 
   &-img {
-    width: 120px;
-    height: 60px;
-    
+    width: 100px;
+    height: 50px;
+  }
+
+  &-img-special {
+    width: 98px;
+    height: 48px;
+    padding-top: 6px;
   }
 
   &-box-1 {

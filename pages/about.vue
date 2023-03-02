@@ -91,7 +91,7 @@ export default {
           img: require('@/assets/img/group/harmony.png'),
           name: '小哈',
           text: '在山裡海裡走跳、愛野生動物更勝於人類ㄉ人類',
-          link: ''
+          link: 'https://www.facebook.com/klkuaiki'
         },
         {
           img: require('@/assets/img/group/tutu.png'),
@@ -187,7 +187,7 @@ export default {
     font-size: 24px;
 
     &-head {
-      font-size: 30px;
+      font-size: 24px;
       margin-bottom: 10px;
       width: 400px;
     }
@@ -195,15 +195,19 @@ export default {
     &-text {
       margin-top: 60px;
       width: 400px;
+      font-size: 18px;
     }
 
     &-link-box {
-      margin-top: 20px;
+      margin-top: 10px;
       display: flex;
+      align-items: center;
       opacity: 0.7;
     }
 
     &-link {
+      width: 18px;
+      height: 18px;
       margin-left: 8px;
     }
 
@@ -252,8 +256,11 @@ export default {
       }
 
       &-text {
-        margin-top: 20px;
+        width: 410px;
+        height: 50px;
+        margin: 20px auto 0px;
         padding: 0px 20px;
+        font-size: 18px;
         text-align: center;
         line-height: 1.5;
       }
@@ -282,13 +289,13 @@ export default {
 
     &-head {
       width: 100%;
-      font-size: 16px;
+      font-size: 20px;
     }
 
     &-text {
       margin: 10px 15px;
       width: calc(100% - 30px);
-      font-size: 14px;
+      font-size: 16px;
     }
 
     &-link-box {
@@ -296,7 +303,8 @@ export default {
     }
 
     &-link {
-      
+      width: 14px;
+      height: 14px;
     }
 
     &-intro {
@@ -327,8 +335,11 @@ export default {
       }
 
       &-text {
+        width: auto;
+        height: 42px;
+        margin: 12px auto 0px;
         padding: 0px 20px;
-        font-size: 14px;
+        font-size: 16px;
       }
 
       &-link-box {
