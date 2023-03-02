@@ -6,8 +6,8 @@
   >
     <div class="index-box">
       <div>
-        <div v-if="tempShow" class="index-head">{{ disappear[currentNum].name }}</div>
-        <div v-if="tempShow" class="index-text" v-html="disappear[currentNum].text"></div>
+        <div v-if="tempDis" class="index-head">{{ disappear[index].name }}</div>
+        <div v-if="tempDis" class="index-text" v-html="text"></div>
       </div>
       <img @click="isShowPopup = true" class="index-btn" src="@/assets/img/btn/disappear.png" alt="btn">
     </div>
@@ -21,10 +21,11 @@
           type="textarea"
           maxlength="150"
           show-word-limit
-          :autosize="{ minRows: 5, maxRows: 7}"
-          placeholder="消失是什麼..."
-          v-model="textareaText1">
+          :autosize="{ minRows: 5, maxRows: 10}"
+          placeholder="消失是什麼...（十行後不顯示）"
+          v-model="textareaText">
         </el-input>
+        <!--  -->
         <div class="index-popup-btn-box">
           <img @click="send" class="index-popup-btn" src="@/assets/img/btn/project-article.png" alt="btn">
         </div>
@@ -46,12 +47,14 @@ export default {
   },
   data () {
     return {
-      tempShow: false,
+      tempDis: false,
       inputText: '',
       textareaText: '',
-      currentNum: 0,
       isShowPopup: false,
       textIn: false,
+      index: 0,
+      text: "",
+
       disappear: [
         { 
           name: '[城市少女]',
@@ -211,16 +214,7 @@ export default {
     }
   },
   async mounted () {
-    this.currentNum = Math.floor(Math.random()*this.disappear.length)
-    this.tempShow = true
-    setInterval(() => {
-      if(this.textIn) {
-        this.textIn = false
-        this.currentNum = this.disappear.length - 1
-      } else {
-        this.currentNum = Math.floor(Math.random()*this.disappear.length)
-      }
-    }, 4000)
+    this.showText()
   },
   destroyed () {
     
@@ -229,7 +223,54 @@ export default {
     
   },
   methods: {
+    showText() {
+      this.index = Math.floor(Math.random()*this.disappear.length)
+      this.text = ""
+      let index = 0
+      if(this.textIn) {
+        this.index = this.disappear.length-1
+        this.textIn = false
+      }
+      this.tempDis = true
+      const timer = setInterval(() => {
+        this.text += this.disappear[this.index].text[index]
+        index++
+        if (index === this.disappear[this.index].text.length) {
+          clearInterval(timer)
+          setTimeout(() => {
+            this.index = (this.index + 1) % this.disappear.length
+            this.showText()
+          }, 3000)
+        }
+      }, 40);
+    },
     send() {
+      // 以斷行分割字串，並移除空白字元
+      const lines = this.textareaText.trim().split('\n').map(line => line.trim());
+
+      // 限制每行最多10個字，多餘的字斷行
+      const processedLines = lines.reduce((acc, line) => {
+        const lineChars = line.split('');
+        let currentLine = '';
+        for (let i = 0; i < lineChars.length; i++) {
+          if (currentLine.length === 10) {
+            acc.push(currentLine);
+            currentLine = '';
+          }
+          currentLine += lineChars[i];
+          if (i === lineChars.length - 1 && currentLine.length > 0) {
+            acc.push(currentLine);
+          }
+        }
+        return acc;
+      }, []);
+
+      // 最多回傳15段，其他刪除
+      const limitedLines = processedLines.slice(0, 15);
+
+      // 回傳字串，以斷行分隔每行
+      this.textareaText = limitedLines.join('\n');
+
       this.disappear.push({
         name: this.inputText,
         text: this.textareaText
