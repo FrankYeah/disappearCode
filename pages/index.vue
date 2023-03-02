@@ -15,13 +15,15 @@
     <div v-if="isShowPopup" @click="isShowPopup = false" class="index-popup">
       <div @click.stop class="index-popup-box">
         <div class="index-popup-text">消失是...</div>
-        <el-input class="index-popup-input" v-model="inputText" placeholder="請輸入名稱"></el-input>
+        <el-input class="index-popup-input" v-model="inputText" maxlength="10" show-word-limit placeholder="投件於網頁顯示暱稱"></el-input>
         <el-input
           class="index-popup-textarea"
           type="textarea"
+          maxlength="150"
+          show-word-limit
           :autosize="{ minRows: 5, maxRows: 7}"
           placeholder="消失是什麼..."
-          v-model="textareaText">
+          v-model="textareaText1">
         </el-input>
         <div class="index-popup-btn-box">
           <img @click="send" class="index-popup-btn" src="@/assets/img/btn/project-article.png" alt="btn">
@@ -266,14 +268,14 @@ export default {
   }
 
   &-head {
-    margin: 20px 0px 50px 0px;
-    font-size: 30px;
+    margin: 20px 0px 30px 0px;
+    font-size: 24px;
   }
 
   &-text {
     margin-top: 20px;
     white-space: pre-line;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 1.3px;
   }
 
@@ -317,7 +319,7 @@ export default {
 
     &-textarea {
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     &-btn-box {
@@ -345,6 +347,7 @@ export default {
   padding: 80px 0px 40px;
 
   &-box {
+    position: relative;
     flex-direction: column;
     width: 90%;
     min-height: calc(100vh - 90px);
@@ -353,15 +356,18 @@ export default {
 
   &-head {
     margin: 20px 0px 20px 0px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   &-text {
     margin-top: 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &-btn {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
     width: 100px;
     height: 50px;
     margin-top: 20px;
