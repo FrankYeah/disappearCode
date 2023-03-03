@@ -248,12 +248,12 @@ export default {
       // 以斷行分割字串，並移除空白字元
       const lines = this.textareaText.trim().split('\n').map(line => line.trim());
 
-      // 限制每行最多10個字，多餘的字斷行
+      // 限制每行最多15個字，多餘的字斷行
       const processedLines = lines.reduce((acc, line) => {
         const lineChars = line.split('');
         let currentLine = '';
         for (let i = 0; i < lineChars.length; i++) {
-          if (currentLine.length === 10) {
+          if (currentLine.length === 15) {
             acc.push(currentLine);
             currentLine = '';
           }
@@ -265,8 +265,8 @@ export default {
         return acc;
       }, []);
 
-      // 最多回傳15段，其他刪除
-      const limitedLines = processedLines.slice(0, 15);
+      // 最多回傳10段，其他刪除
+      const limitedLines = processedLines.slice(0, 10);
 
       // 回傳字串，以斷行分隔每行
       this.textareaText = limitedLines.join('\n');
