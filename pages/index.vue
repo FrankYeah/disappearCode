@@ -242,7 +242,7 @@ export default {
             this.showText()
           }, 3000)
         }
-      }, 40);
+      }, 100);
     },
     send() {
       // 以斷行分割字串，並移除空白字元

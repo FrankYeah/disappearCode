@@ -109,7 +109,7 @@ export default {
  }
 
  &-lightbox {
-   width: 500px;
+   width: 600px;
  }
 
  &-row {
@@ -177,7 +177,7 @@ export default {
  }
 
  &-btn {
-   width: 150px;
+   width: 40vw;
  }
 
  &-secret {
