@@ -10,15 +10,15 @@
       歡迎來到消失事務所，我們由不同的專業團隊組成，同時負責處理雞籠的各種怪奇事務。不論是過去的一段記憶、體驗，或是物品，都可以來信告知您的需求，我們會在評估後，結合團隊及大眾的力量，協助您找回消失的事物。<br><br>
       
       <div class="about-box-head">怪奇團隊</div>
-      由雞籠在地團隊組成，包含:文安社區 X 慾望劇團 X 阿普蛙工作室 X 無用學堂 X 西打藍 X 小哈。以一場飯局為契機，加上一點想在雞籠做些什麼的動力，最終形成了現在有著多元組成的怪奇團隊。<br><br>
+      由雞籠在地團隊組成，包含：文安社區 X 慾望劇團 X 阿普蛙工作室 X 無用學堂 X 西打藍 X 小哈。以一場飯局為契機，加上一點想在雞籠做些什麼的動力，最終形成了現在有著多元組成的怪奇團隊。<br><br>
       
       <div class="about-box-head">過去案例</div>
       <a href='https://frankyeah.github.io/klkuaiki/index.html' target="_blank" class="about-box-link-box">
-        2020:怪奇事件簿、咱的聲音
+        2020：怪奇事件簿、咱的聲音
         <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
       </a>
       <a href='https://frankyeah.github.io/klkuaikii/' target="_blank" class="about-box-link-box">
-        2021:怪奇逃走中-混血探員
+        2021：怪奇逃走中-混血探員
         <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
       </a>
       
