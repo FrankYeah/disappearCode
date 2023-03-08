@@ -36,12 +36,10 @@
       </div>
 
     </div>
-    <div class="collect-text">
-      <nuxt-link class="collect-text-link" to="/secret">
-        <div class="collect-text-text">消失事務所 - 投件單</div>
-        <img class="collect-text-img" src="@/assets/img/social/link.png" alt="fb">
-      </nuxt-link>
-    </div>
+
+    <nuxt-link to="/secret" class="collect-link">
+      <img class="collect-link-img" src="@/assets/img/index/project-case.png" alt="btn">
+    </nuxt-link>
 
   </div>
 </template>
@@ -100,6 +98,7 @@ export default {
 <style lang="scss" scoped>
 
 .collect {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -176,24 +175,17 @@ export default {
     bottom: 50px;
   }
 
-  &-text {
-    margin-top: 4px;
-
-    &-link {
-      display: flex;
-      align-items: center;
-    }
-
-    &-text {
-      
-    }
+  &-link {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    z-index: 2;
 
     &-img {
-      width: 14px;
-      height: 14px;
-      margin-left: 6px;
+      
     }
   }
+  
 }
 
 @media( max-width: 1023px ){
@@ -262,6 +254,15 @@ export default {
 
   &-box-8 {
 
+  }
+
+  &-link {
+    top: 60px;
+    left: 20px;
+
+    &-img {
+      width: 120px;
+    }
   }
 }
 
