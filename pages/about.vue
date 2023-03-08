@@ -52,8 +52,8 @@
         >
       </div>
 
-      <div class="about-box-intro-name">{{ total[currentNum].name }}{{ currentNum }}</div>
-      <div class="about-box-intro-text">{{ total[currentNum].text }}</div>
+      <div class="about-box-intro-name">{{ total[currentNum].name }}</div>
+      <div class="about-box-intro-text" v-html="total[currentNum].text"></div>
       <a v-if="total[currentNum].link" :href='total[currentNum].link' target="_blank" class="about-box-intro-link-box">
         <img class="about-box-intro-link" src="@/assets/img/social/link.png" alt="fb">
       </a>
@@ -81,7 +81,7 @@ export default {
         {
           img: require('@/assets/img/group/11.png'),
           name: '無用學堂/鄭十一',
-          text: '世上沒有什麼是真的無用',
+          text: '世上沒有什麼是真的無用<br>',
           link: 'https://www.wu-yong.com/'
         },
         {
@@ -93,7 +93,7 @@ export default {
         {
           img: require('@/assets/img/group/tutu.png'),
           name: '阿普蛙/杜杜',
-          text: '就是個杜杜。',
+          text: '就是個杜杜。<br>',
           link: 'https://www.facebook.com/Wasupstudio'
         },
         {
@@ -105,19 +105,19 @@ export default {
         {
           img: require('@/assets/img/group/chihon.png'),
           name: '大可思創/奇鴻',
-          text: 'chideart (chi+idea+art)',
+          text: 'chideart (chi+idea+art)<br>',
           link: 'https://www.facebook.com/profile.php?id=100064638415232'
         },
         {
           img: require('@/assets/img/group/pinwen.png'),
           name: '慾望劇團/品文',
-          text: '用戲劇拉近人與人之間的距離',
+          text: '用戲劇拉近人與人之間的距離<br>',
           link: 'https://www.facebook.com/desiretroupe'
         },
         {
           img: require('@/assets/img/group/yiwei.png'),
           name: '西打藍/奕緯',
-          text: '愛基隆、愛文字的西打',
+          text: '愛基隆、愛文字的西打<br>',
           link: 'https://siddharam.com/'
         },
         {

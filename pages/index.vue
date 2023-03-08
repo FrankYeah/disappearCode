@@ -14,6 +14,7 @@
 
     <div v-if="isShowPopup" @click="isShowPopup = false" class="index-popup">
       <div @click.stop class="index-popup-box">
+        <img @click="isShowPopup = false" class="index-popup-close" src="@/assets/img/btn/close.png" alt="close">
         <div class="index-popup-text">消失是...</div>
         <el-input class="index-popup-input" v-model="inputText" maxlength="10" show-word-limit placeholder="投件於網頁顯示暱稱"></el-input>
         <el-input
@@ -344,9 +345,22 @@ export default {
     z-index: 1;
 
     &-box {
+      position: relative;
       width: 500px;
       padding: 40px 40px 60px;
       background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &-text {
@@ -420,7 +434,7 @@ export default {
     &-box {
       width: 90%;
       padding: 60px 20px 0px;
-      height: 70%;
+      height: 90%;
       background-color: rgba(0, 0, 0, 0.8);
     }
 

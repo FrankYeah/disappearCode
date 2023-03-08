@@ -168,7 +168,7 @@ export default {
  }
 
  &-lightbox {
-  width: 88%;
+  width: 95%;
   margin-bottom: 30px;
  }
 

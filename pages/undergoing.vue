@@ -34,7 +34,7 @@
           <div class="under-date">{{ report.date }}</div>
           <div class="under-head">{{ report.head }}</div>
         </div>
-        <div v-if="report.isShow" class="under-text">{{ report.text }}</div>
+        <div v-if="report.isShow" class="under-text" v-html="report.text"></div>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
       <div class="under-fb-head">開放留言協尋資料：</div>
       <!-- <div class="fb-comments" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-numposts="1"></div> -->
       <div class="under-comments">
-        <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/undergoing?id=0" data-width="100vw" data-colorscheme="light" data-numposts="5"></div>
+        <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/undergoing?id=0" data-width="100%" data-colorscheme="light" data-numposts="5"></div>
       </div>
       <!-- <div class="fb-post" data-href="https://m.facebook.com/story.php?story_fbid=pfbid0prjapiCSgQEqjUWSqrDh6D2WCZAKRhdWsitWpzbdgW1i1YanugjYfccB5KgpZyMxl&amp;id=1469845916455723" data-width="500" data-show-text="true"><blockquote cite="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617" class="fb-xfbml-parse-ignore"><p>這間就是臭粿仔湯，大家應該快流口水了嗎？ 地址：206基隆市七堵區自治街12號</p>由<a href="https://facebook.com/keelungdumbdiary">基隆傻瓜日記</a>發佈於&nbsp;<a href="https://zh-tw.facebook.com/keelungdumbdiary/posts/1474786975961617">2017年8月27日 星期日</a></blockquote></div> -->
       <!-- <div class="fb-comments" data-href="https://siddharam.com/1234" data-width="300" data-colorscheme="light" data-numposts="5"></div> -->
@@ -288,7 +288,9 @@ export default {
   }
 
   &-comments {
-    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

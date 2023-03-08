@@ -258,7 +258,8 @@ export default {
 
   &-link {
     top: 60px;
-    left: 20px;
+    left: 50%;
+    transform: translate(-50%, -0%);
 
     &-img {
       width: 120px;
