@@ -109,7 +109,8 @@ export default {
  }
 
  &-lightbox {
-   width: 600px;
+   max-width: 600px;
+   width: 100%;
  }
 
  &-row {

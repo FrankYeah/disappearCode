@@ -391,7 +391,7 @@ export default {
     position: relative;
     flex-direction: column;
     width: 90%;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 120px);
     height: 100%;
   }
 
@@ -408,10 +408,11 @@ export default {
   &-btn {
     position: absolute;
     right: 0px;
-    bottom: 10px;
-    width: 100px;
-    height: 50px;
-    margin-top: 20px;
+    bottom: initial;
+    top: 0px;
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
   }
 
   &-popup {
@@ -419,7 +420,7 @@ export default {
     &-box {
       width: 90%;
       padding: 60px 20px 0px;
-      height: 100%;
+      height: 70%;
       background-color: rgba(0, 0, 0, 0.8);
     }
 
