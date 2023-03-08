@@ -35,7 +35,10 @@
           src="@/assets/img/btn/left.png"
           alt="left"
         >
-        <div class="about-box-intro-img"
+        <div :class="['about-box-intro-img',
+          {'about-box-intro-img-big': currentNum ==  0},
+          {'about-box-intro-img-big': currentNum ==  7},
+        ]"
           :style="[
             {'backgroundImage': 'url(' + total[currentNum].img + ')'}
           ]"
@@ -49,7 +52,7 @@
         >
       </div>
 
-      <div class="about-box-intro-name">{{ total[currentNum].name }}</div>
+      <div class="about-box-intro-name">{{ total[currentNum].name }}{{ currentNum }}</div>
       <div class="about-box-intro-text">{{ total[currentNum].text }}</div>
       <a v-if="total[currentNum].link" :href='total[currentNum].link' target="_blank" class="about-box-intro-link-box">
         <img class="about-box-intro-link" src="@/assets/img/social/link.png" alt="fb">
@@ -72,12 +75,6 @@ export default {
   },
   data () {
     return {
-      currentData: {
-        img: require('@/assets/img/group/11.png'),
-        name: '無用學堂/鄭十一',
-        text: '世上沒有什麼是真的無用',
-        link: 'https://www.wu-yong.com/'
-      },
       currentNum: 0,
       isShow: false,
       total: [
@@ -133,7 +130,7 @@ export default {
     }
   },
   async mounted () {
-    this.total.sort(() => Math.random() - 0.5)
+    this.currentNum = Math.floor(Math.random() * (this.total.length - 1))
     this.isShow = true
   },
   destroyed () {
@@ -312,6 +309,7 @@ export default {
 
       &-row {
         width: 100%;
+        height: 220px;
         margin: auto;
       }
 
@@ -328,6 +326,13 @@ export default {
       &-img {
         width: 100px;
         height: 200px;
+        margin: 0px 10px;
+      }
+
+      &-img-big {
+        width: 120px;
+        height: 240px;
+        margin: 0px;
       }
 
       &-name {
@@ -336,14 +341,14 @@ export default {
 
       &-text {
         width: auto;
-        height: 42px;
+        height: 62px;
         margin: 12px auto 0px;
         padding: 0px 20px;
         font-size: 16px;
       }
 
       &-link-box {
-        
+        margin-top: 0px;
       }
 
       &-link {
