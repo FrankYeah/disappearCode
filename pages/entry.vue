@@ -8,7 +8,7 @@
         }"
       ></div>
       <div class="index-box">
-        <img class="index-lightbox" src="@/assets/img/index/brand.gif" alt="btn">
+        <img class="index-lightbox" src="@/assets/img/brand.gif" alt="btn">
         <div class="index-row">
           <nuxt-link to="/undergoing" class="index-href">
             <img class="index-btn" src="@/assets/img/index/undergoing.png" alt="btn">
