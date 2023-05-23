@@ -10,21 +10,21 @@
         
       }"
     >
-      <div class="collect-box collect-box-1">
+      <nuxt-link to="/map-qinai" class="collect-box collect-box-1">
         <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">
-      </div>
-      <div class="collect-box collect-box-2">
+      </nuxt-link>
+      <nuxt-link to="/map-anlei" class="collect-box collect-box-2">
         <img class="collect-img collect-img-special" src="@/assets/img/collect/anlei.png" alt="btn">
-      </div>
+      </nuxt-link>
       <div class="collect-box collect-box-3">
         <img class="collect-img" src="@/assets/img/collect/sinyi.png" alt="btn">
       </div>
-      <div class="collect-box collect-box-4">
+      <nuxt-link to="/map-chunchen" class="collect-box collect-box-4">
         <img class="collect-img" src="@/assets/img/collect/chunchen.png" alt="btn">
-      </div>
-      <div class="collect-box collect-box-5">
+      </nuxt-link>
+      <nuxt-link to="/map-chunshan" class="collect-box collect-box-5">
         <img class="collect-img" src="@/assets/img/collect/chunshan.png" alt="btn">
-      </div>
+      </nuxt-link>
       <div class="collect-box collect-box-6">
         <img class="collect-img collect-img-special" src="@/assets/img/collect/qidu.png" alt="btn">
       </div>
