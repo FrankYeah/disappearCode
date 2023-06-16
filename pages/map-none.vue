@@ -5,13 +5,13 @@
     }"
   >
     <div class="map-row0">
-      <img class="map-img" src="@/assets/img/collect/anlei.png" alt="fb">
+      <img class="map-img" src="@/assets/img/collect/none.png" alt="fb">
       <nuxt-link to="/collect">
         <img class="map-img" src="@/assets/img/btn/backmap.png" alt="fb">
       </nuxt-link>
     </div>
 
-    <div class="map-outer">
+    <!-- <div class="map-outer">
       <div class="map-left">
         <div class="map-box">
           <div class="map-row">
@@ -46,7 +46,7 @@
           <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/anlei?id=邵小姐" data-width="300" data-colorscheme="light" data-numposts="5"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="fb-comments map-fb" data-href="https://siddharam.com/anlei" data-width="300" data-colorscheme="light" data-numposts="5"></div> -->
 

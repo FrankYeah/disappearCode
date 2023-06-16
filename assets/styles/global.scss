@@ -51,54 +51,103 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 90px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
     color: white;
-  
-    &-box {
+
+    &-row0 {
       display: flex;
       justify-content: space-between;
-      width: 90%;
-      margin: auto;
+      padding: 0px 100px;
     }
-  
-    &-left {
-      display: flex;
-      flex-direction: column;
-    }
-  
+
     &-img {
-      cursor: pointer;
-      opacity: 0.6;
-  
-      &:hover {
-        opacity: 1;
-      }
+      width: 200px;
     }
   
-    &-back {
-      width: 180px;
-      height: 90px;
-      margin-top: 300px;
-      cursor: pointer;
-      opacity: 0.6;
-  
-      &:hover {
-        opacity: 1;
-      }
+    &-outer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 100px;
     }
-  
+
+    &-left {
+      width: 40%;
+    }
+
+    &-box {
+      margin-bottom: 10px;
+      padding: 10px;
+      overflow: scroll;
+      background-color: rgba(white, 0.5);
+    }
+
+    &-row {
+      display: flex;
+    }
+
+    &-want {
+      margin: 0px 4px;
+    }
+
+    &-text {
+      margin-top: 10px;
+    }
+
     &-right {
       width: 50%;
-      min-height: 500px;
-      background-color: aquamarine;
     }
-  
-    &-fb {
+
+    &-box2 {
+      background-color: white;
+      padding: 10px 10px 30px 10px;
+    }
+
+    &-row2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-name {
+      font-weight: bold;
+      color: black;
+    }
+
+    &-row3 {
+      display: flex;
+      font-weight: bold;
+      color: black;
+    }
+
+    &-want2 {
       
+    }
+
+    &-like {
+      
+    }
+
+    &-text2 {
+      margin-top: 20px;
+      color: black;
+    }
+
+    &-title {
+      margin-top: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    &-text3 {
+      color: black;
+    }
+
+    &-fb {
+      margin-top: 10px;
+      background-color: white;
     }
   }
   

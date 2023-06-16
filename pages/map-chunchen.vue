@@ -5,7 +5,7 @@
     }"
   >
     <div class="map-row0">
-      <img class="map-img" src="@/assets/img/collect/anlei.png" alt="fb">
+      <img class="map-img" src="@/assets/img/collect/chunchen.png" alt="fb">
       <nuxt-link to="/collect">
         <img class="map-img" src="@/assets/img/btn/backmap.png" alt="fb">
       </nuxt-link>
@@ -15,11 +15,11 @@
       <div class="map-left">
         <div class="map-box">
           <div class="map-row">
-            <div>邵XX</div>
+            <div>陳XX</div>
             <div class="map-want">想找</div>
             <div>美食</div>
           </div>
-          <div class="map-text">以前有個三輪車阿伯會賣肉圓跟四神湯</div>
+          <div class="map-text">捏糖人</div>
         </div>
       </div>
       <div class="map-right">
@@ -27,23 +27,23 @@
         <div class="map-box2">
           <div class="map-row2">
             <div>
-              <div class="map-name">邵XX</div>
+              <div class="map-name">陳XX</div>
               <div class="map-row3">
                 <div class="map-want2">想找</div>
                 <div>美食</div>
               </div>
             </div>
             <div class="map-like">
-              <div class="fb-like" data-href="https://frankyeah.github.io/disappear/anlei?id=邵小姐" data-width="300" data-layout="" data-action="" data-size="" data-share="true"></div>
+              <div class="fb-like" data-href="https://frankyeah.github.io/disappear/anlei?id=陳秀美" data-width="300" data-layout="" data-action="" data-size="" data-share="true"></div>
             </div>
           </div>
-          <div class="map-text2">小學阿公放學接我們回家時，都會遇到三輪車阿伯，剛好賣到我們家樓下，阿公會買一顆肉圓一起吃，有時候也會買四神湯，阿伯的四神湯味道很奇妙，跟現在市面上的都不一樣，非常令人懷念</div>
+          <div class="map-text2">小時候每次去中正公園都會買一支來吃現在都沒看到過這類的了，如果可以想讓小孩也吃吃看我們以前的零食現在頂多看到畫糖而不是吹糖捏糖，傳統的零食工藝也消失了</div>
           <div class="map-title">我提供的線索</div>
-          <div class="map-text3">記得阿伯的三輪車都是大概小學放學時間到崇德路賣的，只有賣肉圓跟四神湯</div>
+          <div class="map-text3">我只知道中正公園忠烈祠旁的公園有一位阿伯假日都會在那擺攤，有動物的模具就可以做吹糖也可以講想要什麼就用捏糖</div>
         </div>
         
         <div class="map-fb">
-          <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/anlei?id=邵小姐" data-width="300" data-colorscheme="light" data-numposts="5"></div>
+          <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/anlei?id=陳秀美" data-width="300" data-colorscheme="light" data-numposts="5"></div>
         </div>
       </div>
     </div>
