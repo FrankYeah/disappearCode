@@ -42,6 +42,7 @@ export default {
     return {
       items: [
         { name: '吳小姐', class: '場所', text: '章魚游泳池', link: 'https://www.facebook.com/100088446610563/posts/pfbid0362nhTnJMLERWLfVTVUBAAzCg42trcp79vBBoni2gpk7PpYTVWfv5CMceJ4dFtiFhl/?mibextid=cr9u03' },
+        // { name: '', class: '', text: '', link: '' },
       ]
     }
   },

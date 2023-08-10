@@ -35,8 +35,8 @@
         <img class="collect-img" src="@/assets/img/collect/none.png" alt="btn">0
       </nuxt-link> -->
 
-      <nuxt-link to="/collect" class="collect-box collect-box-1">
-        <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">0
+      <nuxt-link to="/map-zenai" class="collect-box collect-box-1">
+        <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">1
       </nuxt-link>
       <nuxt-link to="/collect" class="collect-box collect-box-2">
         <img class="collect-img collect-img-special" src="@/assets/img/collect/anlei.png" alt="btn">0
@@ -162,7 +162,6 @@ export default {
   &-img {
     width: 120px;
     height: 60px;
-    cursor: text;
   }
 
   &-box-1 {
