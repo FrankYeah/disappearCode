@@ -1,57 +1,29 @@
 <template>
   <div class="map"
-    :style="{
-      'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
-    }"
+  :style="{
+    'backgroundImage' : 'url(' + require('@/assets/img/index/bg3.png') + ')'
+  }"
   >
     <div class="map-row0">
-      <img class="map-img" src="@/assets/img/collect/anlei.png" alt="fb">
+      <img class="map-img" src="@/assets/img/collect/qinai.png" alt="fb">
       <nuxt-link to="/collect">
         <img class="map-img" src="@/assets/img/btn/backmap.png" alt="fb">
       </nuxt-link>
     </div>
 
-    <div class="map-outer">
-      <div class="map-left">
-        <div class="map-box">
-          <div class="map-row">
-            <div>邵XX</div>
-            <div class="map-want">想找</div>
-            <div>美食</div>
-          </div>
-          <div class="map-text">以前有個三輪車阿伯會賣肉圓跟四神湯</div>
-        </div>
-      </div>
-      <div class="map-right">
-
-        <div class="map-box2">
-          <div class="map-row2">
-            <div>
-              <div class="map-name">邵XX</div>
-              <div class="map-row3">
-                <div class="map-want2">想找</div>
-                <div>美食</div>
-              </div>
-            </div>
-            <div class="map-like">
-              <div class="fb-like" data-href="https://frankyeah.github.io/disappear/anlei?id=邵小姐" data-width="300" data-layout="" data-action="" data-size="" data-share="true"></div>
-            </div>
-          </div>
-          <div class="map-text2">小學阿公放學接我們回家時，都會遇到三輪車阿伯，剛好賣到我們家樓下，阿公會買一顆肉圓一起吃，有時候也會買四神湯，阿伯的四神湯味道很奇妙，跟現在市面上的都不一樣，非常令人懷念</div>
-          <div class="map-title">我提供的線索</div>
-          <div class="map-text3">記得阿伯的三輪車都是大概小學放學時間到崇德路賣的，只有賣肉圓跟四神湯</div>
-        </div>
-        
-        <div class="map-fb">
-          <div class="fb-comments" data-href="https://frankyeah.github.io/disappear/anlei?id=邵小姐" data-width="300" data-colorscheme="light" data-numposts="5"></div>
-        </div>
-      </div>
+    <div class="map-box">
+      <a class="map-item"
+        v-for="(item, index) in items"
+        :key="index"
+        :href="item.link"
+        target="_blank"
+      >
+        <div class="map-text1">{{ item.name }} 想找 {{ item.class }}</div>
+        <div class="map-text2">{{ item.text }}</div>
+      </a>
     </div>
 
-    <!-- <div class="fb-comments map-fb" data-href="https://siddharam.com/anlei" data-width="300" data-colorscheme="light" data-numposts="5"></div> -->
-
-
-</div>
+  </div>
 </template>
 
 <script>
@@ -68,28 +40,14 @@ export default {
   },
   data () {
     return {
-      isFBReady: false,
-      isFromIndexPage: false
+      items: [
+        { name: '邵小姐', class: '食物', text: '三輪車阿伯', link: 'https://www.facebook.com/100088446610563/posts/pfbid0bnrhw6bxbXJGAkCm83GXo22qPx2YJ7kEwrgZV23UELDd9P52SLwFdZfu7s98wVqgl/?mibextid=cr9u03' },
+        // { name: '', class: '', text: '', link: '' },
+      ]
     }
-  },
-    beforeRouteEnter(to, from, next) {
-      next(vm => {
-      // 判斷是否從首頁過來
-      if(from.name) {
-      console.log(from.name.substr(0, 5))
-        if(from.name.substr(0, 8) == 'collect') {
-          console.log(from.name.substr(0, 8))
-          console.log(from.name)
-          vm.isFromIndexPage = true
-        }
-      }
-      vm.prevRoute = from
-    })
   },
   mounted () {
-    if(this.isFromIndexPage) {
-      location.reload()
-    }
+    
     // this.isFBReady = Vue.FB != undefined
     // window.addEventListener('fb-sdk-ready', this.onFBReady)
   },
