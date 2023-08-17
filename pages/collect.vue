@@ -36,7 +36,7 @@
       </nuxt-link> -->
 
       <nuxt-link to="/map-zenai" class="collect-box collect-box-1">
-        <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">1
+        <img class="collect-img" src="@/assets/img/collect/qinai.png" alt="btn">2
       </nuxt-link>
       <nuxt-link to="/map-anlei" class="collect-box collect-box-2">
         <img class="collect-img collect-img-special" src="@/assets/img/collect/anlei.png" alt="btn">1
@@ -44,8 +44,8 @@
       <nuxt-link to="/collect" class="collect-box collect-box-3">
         <img class="collect-img" src="@/assets/img/collect/sinyi.png" alt="btn">0
       </nuxt-link>
-      <nuxt-link to="/collect" class="collect-box collect-box-4">
-        <img class="collect-img" src="@/assets/img/collect/chunchen.png" alt="btn">0
+      <nuxt-link to="/map-chunchen" class="collect-box collect-box-4">
+        <img class="collect-img" src="@/assets/img/collect/chunchen.png" alt="btn">1
       </nuxt-link>
       <nuxt-link to="/map-chunshan" class="collect-box collect-box-5">
         <img class="collect-img" src="@/assets/img/collect/chunshan.png" alt="btn">1
