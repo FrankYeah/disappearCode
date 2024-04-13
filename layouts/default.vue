@@ -1,6 +1,6 @@
 <template>
   <div class="default">
-    <topBar />
+    <topBar v-if="currentRoute != '/north-sound' || currentRoute != '/north-sound/'" />
     <div class="default-box">
       <nuxt/>
     </div>
@@ -20,10 +20,12 @@ export default {
   },
   data () {
     return {
-      
+      currentRoute: ''
     }
   },
   async mounted () {
+    this.currentRoute = this.$route.path
+    console.log("當前路徑是：", this.currentRoute)
 
   },
   computed: {

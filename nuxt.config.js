@@ -88,10 +88,18 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend (config, { isDev, isClient }) {
+      config.module.rules.push({
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
+      })
       if (!isDev) {
           config.output.publicPath = './_nuxt/'
       }
       return config;
+      
     },
     transpile: ['resize-detector'],
     loaders: {
