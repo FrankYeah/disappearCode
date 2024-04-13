@@ -1,6 +1,6 @@
 <template>
   <div class="default">
-    <topBar v-if="currentRoute != '/north-sound' || currentRoute != '/north-sound/'" />
+    <topBar v-if="currentRoute != '/north-sound/'" />
     <div class="default-box">
       <nuxt/>
     </div>

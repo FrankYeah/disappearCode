@@ -1,8 +1,12 @@
 <template>
   <div class="north">
     <div>
-      <button @click="playSound">播放聲音</button>
-      <audio ref="audioPlayer" src="plum.mp3"></audio>
+      <img @click="playSound1" class="north-music" src="@/assets/img/music/ba.jpeg" alt="music">
+      <img @click="playSound2" class="north-music" src="@/assets/img/music/drum.jpeg" alt="music">
+      <img @click="playSound3" class="north-music" src="@/assets/img/music/wiu.jpeg" alt="music">
+      <audio ref="audioPlayer1" src="plum.mp3"></audio>
+      <audio ref="audioPlayer2" src="punk.wav"></audio>
+      <audio ref="audioPlayer3" src="small.wav"></audio>
       <img class="about-box-link" src="@/assets/img/social/link.png" alt="fb">
     </div>
   </div>
@@ -34,8 +38,14 @@ export default {
     
   },
   methods: {
-    playSound() {
-      this.$refs.audioPlayer.play();
+    playSound1() {
+      this.$refs.audioPlayer1.play();
+    },
+    playSound2() {
+      this.$refs.audioPlayer2.play();
+    },
+    playSound3() {
+      this.$refs.audioPlayer3.play();
     }
   },
   watch: {
@@ -47,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 
 .north {
-  background: red;
+  
 
 }
 
