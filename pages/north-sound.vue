@@ -1,5 +1,12 @@
 <template>
-  <div class="north">
+  <div 
+  class="north">
+    <div class="north-bg"
+      :style="{
+        'backgroundImage' : 'url(' + require('@/assets/img/music/bg1.webp') + ')'
+      }"
+    ></div>
+    <!-- <img src="@/assets/img/music/bg1.webp" alt="music"> -->
     <div class="north-box">
       <!-- <img @click="playSound1" class="north-music north-music1" src="@/assets/img/music/smallruo.jpeg" alt="music"> -->
       <img @click="playSound1" class="north-music north-music1" src="@/assets/img/music/smallruo1.webp" alt="music">
@@ -74,6 +81,22 @@ export default {
 <style lang="scss" scoped>
 
 .north {
+  min-height: 100vh;
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: -1;
+    opacity: 0.3;
+  }
 
   &-box {
     display: flex;
